@@ -324,11 +324,21 @@ h2 {
   padding: 0 14px;
 }
 
+.button-grid button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
 .button-grid button:hover,
 #clearOutput:hover,
 .editor-header button:hover {
   border-color: var(--blue);
   color: var(--blue);
+}
+
+.button-grid button:disabled:hover {
+  border-color: #c9d5e5;
+  color: var(--ink);
 }
 
 .editor-header button:disabled:hover {

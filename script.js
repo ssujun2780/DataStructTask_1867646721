@@ -282,6 +282,11 @@ function setSelectedClass(className) {
   legendItems.forEach((item) => {
     item.classList.toggle("active", item.dataset.tier === tier);
   });
+
+  const isAbstract = className === "PersonADT";
+  methodButtons.forEach((button) => {
+    button.disabled = isAbstract;
+  });
 }
 
 function writeOutput(methodName, result) {
@@ -449,6 +454,11 @@ classButtons.forEach((button) => {
 
 methodButtons.forEach((button) => {
   button.addEventListener("click", async () => {
+    if (selectedClass === "PersonADT") {
+      output.textContent = "[PersonADT 안내]\n\nPersonADT는 추상 클래스라 직접 실행할 수 없습니다. Person, Student, Professor, Friend 중 하나를 선택하세요.";
+      return;
+    }
+
     const methodName = button.dataset.method;
     const pythonMethod = methodMap[methodName];
 

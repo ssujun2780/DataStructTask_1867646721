@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DataStructureTask Graph View</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="shell">
+    <section class="graph-panel">
+      <div class="panel-title">
+        <h1>Graph Canvas</h1>
+        <div id="graph-hint" class="muted">Class decks + object cards + runtime UI</div>
+      </div>
+      <div id="graph-viewport" class="graph-viewport">
+        <svg id="graph-canvas" class="graph-canvas" xmlns="http://www.w3.org/2000/svg">
+          <g id="graph-background"></g>
+          <g id="graph-edges"></g>
+          <g id="graph-overlays"></g>
+          <g id="graph-nodes"></g>
+          <g id="graph-runtime-edges"></g>
+        </svg>
+
+        <div id="runtime-panels" class="runtime-panels">
+          <section id="action-panel" class="runtime-panel" data-panel-id="action-panel">
+            <header class="runtime-panel__header">
+              <h2 id="action-panel-title">Actions</h2>
+            </header>
+            <div class="runtime-panel__body">
+              <div class="runtime-button-grid">
+                <button id="start-button" class="primary">Start</button>
+                <button id="relayout-button">Relayout</button>
+                <button data-action="study">Study</button>
+                <button data-action="play">Play</button>
+                <button data-action="exercise">Exercise</button>
+                <button data-action="rest">Rest</button>
+              </div>
+            </div>
+          </section>
+
+          <section id="status-panel" class="runtime-panel" data-panel-id="status-panel">
+            <header class="runtime-panel__header">
+              <h2 id="status-panel-title">Game Status</h2>
+            </header>
+            <div id="game-status" class="runtime-panel__body status-grid"></div>
+          </section>
+
+          <section id="replay-panel" class="runtime-panel" data-panel-id="replay-panel">
+            <header class="runtime-panel__header">
+              <h2 id="replay-panel-title">Replay</h2>
+            </header>
+            <div class="runtime-panel__body panel-stack">
+              <div class="segmented" id="replay-mode-group">
+                <button data-replay-mode="skip">Skip</button>
+                <button data-replay-mode="simple" class="is-active">Simple</button>
+                <button data-replay-mode="detailed">Detailed</button>
+              </div>
+              <div class="segmented" id="replay-controls-group">
+                <button id="next-step-button">Next</button>
+              </div>
+              <div id="replay-status" class="muted">Idle</div>
+              <div class="segmented" id="lang-group">
+                <button data-lang="ko" class="is-active">KO</button>
+                <button data-lang="en">EN</button>
+              </div>
+              <div class="runtime-button-row">
+                <button id="fit-view-button">Fit View</button>
+                <button id="reset-view-button">Reset Layout</button>
+              </div>
+            </div>
+          </section>
+
+          <section id="choice-panel" class="runtime-panel runtime-panel--hidden" data-panel-id="choice-panel">
+            <header class="runtime-panel__header">
+              <h2 id="choice-panel-title">Choice</h2>
+            </header>
+            <div id="choice-panel-content" class="runtime-panel__body panel-stack"></div>
+          </section>
+
+          <section id="output-panel" class="runtime-panel" data-panel-id="output-panel">
+            <header class="runtime-panel__header">
+              <h2 id="output-panel-title">CLI Output</h2>
+            </header>
+            <div id="output-panel-content" class="runtime-panel__body output-list"></div>
+          </section>
+        </div>
+
+        <aside id="node-detail-panel" class="node-detail-panel node-detail-panel--hidden">
+          <header class="node-detail-panel__header">
+            <div>
+              <h2 id="node-detail-title">Node</h2>
+              <div id="node-detail-subtitle" class="muted"></div>
+            </div>
+            <button id="node-detail-close" type="button" aria-label="Close">X</button>
+          </header>
+          <div id="node-detail-content" class="node-detail-panel__body"></div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="main-layout">
+      <aside class="inspector-panel">
+        <div class="panel-title">
+          <h2>Inspector</h2>
+        </div>
+        <div id="inspector-content" class="inspector-content"></div>
+      </aside>
+
+      <section class="timeline-panel">
+        <div class="panel-title">
+          <h2>Trace</h2>
+        </div>
+        <div id="timeline-content" class="timeline-content"></div>
+      </section>
+    </div>
+  </div>
+
+  <div id="context-menu" class="context-menu hidden"></div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

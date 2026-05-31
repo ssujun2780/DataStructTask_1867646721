@@ -1,0 +1,123 @@
+{
+  "difficulty": {
+    "valid": ["easy", "normal", "hard"],
+    "default": "normal"
+  },
+  "student": {
+    "defaultName": "김학생",
+    "startStress": 0,
+    "startGrade": 1,
+    "startSemester": 1,
+    "startGpa": 0.0,
+    "lowMaxHealthWarning": 40,
+    "lowIntelligenceWarning": 70,
+    "recommendedMaxHealth": [100, 120],
+    "recommendedIntelligence": [90, 110]
+  },
+  "friend": {
+    "countRange": [2, 4],
+    "playAcceptance": [
+      {"minFavor": 80, "chance": 0.95},
+      {"minFavor": 60, "chance": 0.8},
+      {"minFavor": 40, "chance": 0.6},
+      {"minFavor": 20, "chance": 0.4},
+      {"minFavor": 0, "chance": 0.2}
+    ],
+    "play": {
+      "health": -8,
+      "stress": -6,
+      "favor": 2,
+      "forgetChance": 0.3,
+      "forgetIntelligence": -1,
+      "rejectStress": 1
+    },
+    "relationChange": {
+      "maxFavor": 100,
+      "badChance": 0.05,
+      "goodChance": 0.1,
+      "amount": 3
+    },
+    "advice": {
+      "studyMinIntelligence": 100,
+      "exerciseMinHealth": 150,
+      "playChance": 0.2
+    }
+  },
+  "professor": {
+    "candidatesPerCourse": 3,
+    "easterEggRange": [1, 100],
+    "easterEggHit": 1,
+    "commonEventChance": 0.2,
+    "tendencyEventChance": 0.5,
+    "graduateRouteChance": 0.1,
+    "commonEventSplit": [0.33, 0.66],
+    "graduateRoute": [
+      {"step": 0, "favor": 35, "intelligence": 110, "gpa": 2.5},
+      {"step": 1, "favor": 55, "intelligence": 125, "gpa": 3.0},
+      {"step": 2, "favor": 75, "intelligence": 140, "gpa": 3.5}
+    ]
+  },
+  "exam": {
+    "baseGradePoint": 3.2,
+    "intelligenceBase": 100,
+    "intelligenceWeight": 0.015,
+    "difficultyWeight": 0.25,
+    "stressWeight": 0.01,
+    "healthCenter": 0.5,
+    "healthWeight": 0.6,
+    "luckRange": [-0.2, 0.2],
+    "favorBase": 50,
+    "favorWeight": 0.2,
+    "minGradePoint": 0.0,
+    "maxGradePoint": 4.5,
+    "difficultyMap": {
+      "쉬움": -1,
+      "보통": 0,
+      "어려움": 1
+    }
+  },
+  "ending": {
+    "stressOver": 100,
+    "maxHealthZero": 0,
+    "expelledWarningCount": 3,
+    "goodGraduationGpa": 3.5,
+    "graduateRouteCompleteStep": 3
+  },
+  "turn": {
+    "academicWarningGpa": 1.5,
+    "healthDanger": 12,
+    "healthLow": 30,
+    "stressWarning": 80,
+    "validActions": [1, 2, 3, 4, 5],
+    "events": [
+      {"maxRoll": 0.1, "name": "eureca"},
+      {"maxRoll": 0.2, "name": "concentration"},
+      {"maxRoll": 0.25, "name": "goodHealth"},
+      {"maxRoll": 0.3, "name": "sick"},
+      {"maxRoll": 0.33, "name": "slump"},
+      {"maxRoll": 0.35, "name": "hyeonta"},
+      {"maxRoll": 0.351, "name": "doomsDay"}
+    ],
+    "friendExerciseEventChance": 0.08,
+    "friendStudyEventChance": 0.16
+  },
+  "actions": {
+    "study": {
+      "health": -10,
+      "stress": 5,
+      "intelligence": 5
+    },
+    "exercise": {
+      "health": -10,
+      "maxHealth": 3,
+      "stressChanceWeight": 0.005,
+      "stressDown": -2,
+      "stressUp": 2
+    },
+    "rest": {
+      "friendEventChance": 0.1,
+      "stressDownChance": 0.2,
+      "stressDown": -6
+    }
+  }
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PersonADT 오버라이딩 데모</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <section class="tree-panel" aria-label="상속 트리">
+      <h1>PersonADT 상속 트리</h1>
+      <div class="tree">
+        <button class="node active" data-class="PersonADT">PersonADT</button>
+        <div class="line"></div>
+        <button class="node" data-class="Person">Person</button>
+        <div class="branches">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="children">
+          <button class="node leaf" data-class="Student">Student</button>
+          <button class="node leaf" data-class="Professor">Professor</button>
+          <button class="node leaf" data-class="Friend">Friend</button>
+        </div>
+      </div>
+      <div class="legend">
+        <span>ADT 선언</span>
+        <span>공통 부모</span>
+        <span>구체 클래스</span>
+      </div>
+      <pre id="classCode" class="code-box"></pre>
+    </section>
+
+    <section class="output-panel" aria-label="출력창">
+      <div class="output-header">
+        <span>출력창</span>
+        <button id="clearOutput" type="button">비우기</button>
+      </div>
+      <div id="output" class="output" aria-live="polite">
+        왼쪽에서 클래스를 선택하고 오른쪽 버튼을 누르세요.
+      </div>
+    </section>
+
+    <section class="control-panel" aria-label="함수 실행 패널">
+      <h2>오버라이딩 함수</h2>
+      <p id="selectedInfo">현재 선택: PersonADT</p>
+      <div class="button-grid">
+        <button type="button" data-method="introduce">introduce()</button>
+        <button type="button" data-method="getRole">getRole()</button>
+        <button type="button" data-method="dailyTask">dailyTask()</button>
+        <button type="button" data-method="printInfo">printInfo()</button>
+      </div>
+      <h2 class="sub-title">다형성 비교</h2>
+      <div class="button-grid">
+        <button type="button" data-poly="introduce">세 클래스 introduce() 비교</button>
+        <button type="button" data-poly="dailyTask">세 클래스 dailyTask() 비교</button>
+      </div>
+      <div class="note">
+        PersonADT는 함수 이름만 정의하는 ADT 역할입니다. Student, Professor, Friend는 같은 함수명을 서로 다른 결과로 오버라이딩합니다.
+      </div>
+      <ul class="checklist">
+        <li>상속 관계 시각화</li>
+        <li>오버라이딩 함수 버튼 실행</li>
+        <li>다형성 결과 출력</li>
+      </ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

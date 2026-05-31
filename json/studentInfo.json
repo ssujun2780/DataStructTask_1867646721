@@ -1,0 +1,23 @@
+{
+    "student" : {
+            "easy" : {
+                "maxHealth": [200, 300],
+                "stress": [0, 20],
+                "intelligence": [108, 125],
+                "grade": 1
+            },
+            "normal" : {
+                "maxHealth": [100, 200],
+                "stress": [20, 50],
+                "intelligence": [92, 108],
+                "grade": 1
+            },
+            "hard" : {
+                "maxHealth": [40, 100],
+                "stress": [50, 80],
+                "intelligence": [75, 92],
+                "grade": 1
+        }
+    },
+    "turn": "8"
+}

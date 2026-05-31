@@ -1,0 +1,38 @@
+{
+  "call": {
+    "title": "친구 연락하기",
+    "noFriend": "현재 연락 가능한 친구가 없습니다.",
+    "back": "돌아가기",
+    "contactOption": "{friend_name}에게 연락하기"
+  },
+  "play": {
+    "accepted": "{friend_name}이(가) 연락을 받고 같이 놀아주었습니다.",
+    "recovered": "친구와 놀며 현재 체력과 스트레스가 각각 {health}, {stress} 줄어들었습니다.",
+    "favorUp": "{friend_name}의 호감도가 {favor_delta} 증가했습니다.",
+    "forgot": "친구와 놀면서 수업 내용을 잊어먹었습니다. 지능이 {intelligence_delta} 떨어집니다.",
+    "rejected": "{friend_name}이(가) 바쁘다며 거절했습니다.",
+    "rejectStress": "조금 실망했지만 어쩔 수 없습니다. 스트레스가 {stress_delta} 증가합니다."
+  },
+  "relationChange": {
+    "bad": "갑자기 {friend_name}와(과)의 관계가 {amount}만큼 악화되었습니다!",
+    "good": "갑자기 {friend_name}와(과)의 관계가 {amount}만큼 호전되었습니다!"
+  },
+  "adviceStudy": {
+    "title": "{friend_name} 이(가) 같이 공부하자고 제안합니다!",
+    "content": "{friend_name} 은(는) 시험기간을 맞아 같이 공부하자고 제안합니다.",
+    "accept": "좋지! 같이 공부하자고. (지능이 {intelligence_delta} 증가하고 친밀도가 {favor_delta} 올라갑니다.)",
+    "reject": "미안, 지금은 급한 일이 있어. (친밀도가 {favor_delta} 내려갑니다.)"
+  },
+  "adviceExercise": {
+    "title": "{friend_name} 이(가) 같이 운동하자고 제안합니다!",
+    "content": "{friend_name} 은(는) 같이 운동하자고 제안합니다. \n승낙하게 되면 쉬지를 못합니다.",
+    "accept": "좋지! 같이 운동하자고. (현재 체력이 {health_delta} 내려가고 최대 체력이 {max_health_delta} 증가하고 친밀도가 {favor_delta} 올라갑니다.)",
+    "reject": "미안, 지금은 급한 일이 있어. (친밀도가 {favor_delta} 내려갑니다.)"
+  },
+  "advicePlay": {
+    "title": "{friend_name} 이(가) 같이 놀자고 제안합니다!",
+    "content": "{friend_name} 은(는) 같이 놀자고 제안합니다.",
+    "accept": "좋지! 같이 놀자고. (현재 체력이 {health_delta} 내려가고 스트레스가 {stress_delta} 감소하고 친밀도가 {favor_delta} 올라갑니다.)",
+    "reject": "미안, 지금은 급한 일이 있어. (친밀도가 {favor_delta} 내려갑니다.)"
+  }
+}

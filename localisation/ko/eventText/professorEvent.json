@@ -1,0 +1,98 @@
+{
+  "commonOfficeHour": {
+    "title": "{professor_name} 교수의 면담 제안",
+    "content": "{professor_name} 교수가 면담해보지 않겠냐고 말합니다.",
+    "option1": "뭐, 한 번 가보지. (지능 +{intelligence_delta}, 스트레스 +{stress_delta}, 교수 호감도 +{favor_delta})",
+    "option2": "괜찮습니다. (교수 호감도 {favor_delta})",
+    "success": "면담을 통해 많은 것을 알았습니다.",
+    "reject": "교수는 아쉬워하는 눈치입니다."
+  },
+  "commonMaterialArrange": {
+    "title": "강의 자료 정리",
+    "content": "{professor_name} 교수가 수업 자료 정리를 도와달라고 부탁합니다.",
+    "option1": "당연히 도와드려야죠. (현재 체력 {health_delta}, 교수 호감도 +{favor_delta})",
+    "option2": "지금은 다른 일이 바빠서요. (교수 호감도 {favor_delta})",
+    "success": "수업 준비를 도우며 교수와 조금 가까워졌습니다.",
+    "reject": "교수의 표정이 그리 좋아보이지 않습니다."
+  },
+  "commonReferenceBook": {
+    "title": "참고 서적 추천",
+    "content": "{professor_name} 교수가 참고하면 좋은 책과 자료를 추천해줍니다.",
+    "option1": "당연히 읽어봐야죠. (지능 +{intelligence_delta}, 스트레스 +{stress_delta}, 교수 호감도 +{favor_delta})",
+    "option2": "안읽어도 모르겠지. (교수 호감도 {favor_delta})",
+    "success": "추천 자료가 생각보다 큰 도움이 되었습니다.",
+    "reject": "어째서 교수님의 표정이 좋지 않을까?"
+  },
+  "generous": {
+    "title": "추가 과제 기회",
+    "content": "{professor_name} 교수는 관대하게도 부족한 부분을 메울 추가 과제를 제안합니다.",
+    "option1": "아리가또고자이마스 교수사마. (지능 +{intelligence_delta}, 스트레스 +{stress_delta}, 교수 호감도 +{favor_delta})",
+    "option2": "지금은 좀 바빠서요. (교수 호감도 {favor_delta})",
+    "success": "과제는 어려웠지만, 그래도 해냈습니다.",
+    "reject": "음. 뭔가 좋은 기회를 놓친 것 같군요."
+  },
+  "strict": {
+    "title": "즉석 구두 점검",
+    "content": "{professor_name} 교수는 깐깐하게 수업 내용을 즉석에서 점검하겠다고 합니다.",
+    "option1": "열심히 공부한 보람이 있구만. (지능 +{intelligence_delta}, 스트레스 +{stress_delta}, 교수 호감도 +{favor_delta})",
+    "option2": "최대한 눈을 피한다. (스트레스 +{stress_delta}, 교수 호감도 {favor_delta})",
+    "success": "해냈습니다!",
+    "reject": "이런, 걸렸습니다. 하필 모르는 부분을 물어봤군요."
+  },
+  "research": {
+    "title": "논문 읽기 권유",
+    "content": "{professor_name} 교수는 최신 논문 한 편을 읽어보라고 권합니다.",
+    "option1": "논문이라. 그것은 얼마나 어려운 단어들이 있지? (지능 +{intelligence_delta}, 스트레스 +{stress_delta}, 교수 호감도 +{favor_delta})",
+    "option2": "학부생에게는 너무 어려운 것 같은데요. (교수 호감도 {favor_delta})",
+    "success": "논문은 어려웠지만 분명히 성장했습니다.",
+    "reject": "뭐, 어려운 것은 일단 피했으니까요."
+  },
+  "communicative": {
+    "title": "수업 시연 보조",
+    "content": "{professor_name} 교수는 다음 수업에서 간단한 시연을 같이 해보자고 제안합니다.",
+    "option1": "조오치! (지능 +{intelligence_delta}, 스트레스 +{stress_delta}, 교수 호감도 +{favor_delta})",
+    "option2": "어... 아, 그.. 그래서 ... (교수 호감도 {favor_delta})",
+    "success": "설명해보니 오히려 이해가 더 선명해진 것 같군요.",
+    "reject": "교수는 아쉬워했지만 강요하지는 않았습니다. 다... 다행이군요"
+  },
+  "severe": {
+    "title": "보충 훈련",
+    "content": "{professor_name} 교수는 기초가 부족하다며 추가 연습을 강하게 권합니다.",
+    "option1": "쪼와요~ 쪼와요~ 과제가 쪼와요!. (현재 체력 {health_delta}, 지능 +{intelligence_delta}, 교수 호감도 +{favor_delta})",
+    "option2": "으아앙! 과제 네르지 마세요!!!. (스트레스 +{stress_delta}, 교수 호감도 {favor_delta})",
+    "success": "혹독했지만 실력은 확실히 늘었습니다.",
+    "reject": "엄격한 교수는 성실하지 못하다고 판단한 듯합니다."
+  },
+  "loose": {
+    "title": "자율 프로젝트",
+    "content": "{professor_name} 교수는 느슨하게 자율 프로젝트를 해보라고 말합니다.",
+    "option1": "자율 프로젝트를 진행한다. (지능 +{intelligence_delta}, 스트레스 +{stress_delta}, 교수 호감도 +{favor_delta})",
+    "option2": "그냥 쉬엄쉬엄 넘긴다. (스트레스 {stress_delta}, 교수 호감도 {favor_delta})",
+    "success": "자유롭게 진행했지만 생각보다 얻은 것이 컸습니다.",
+    "reject": "편하긴 했지만 교수의 기대에는 못 미쳤습니다."
+  },
+  "graduate1": {
+    "title": "연구실 첫 방문",
+    "content": "{professor_name} 교수가 연구실에 한번 놀러 와보지 않겠냐고 말합니다.",
+    "option1": "연구실에 가본다. (지능 +{intelligence_delta}, 스트레스 +{stress_delta}, 교수 호감도 +{favor_delta}, 대학원 루트 진행)",
+    "option2": "헉 노예, 아니 대학원 생활은 싫은데. (교수 호감도 {favor_delta})",
+    "success": "에이, 다른 데에서 듣던 것보다는 괜찮네.",
+    "reject": "다행스럽군요 21세기에 남았습니다."
+  },
+  "graduate2": {
+    "title": "세미나 참관 제안",
+    "content": "{professor_name} 교수가 연구 세미나를 같이 들어보자고 합니다.",
+    "option1": "좋죠. 세미나에 가겠습니다. (지능 +{intelligence_delta}, 스트레스 +{stress_delta}, 교수 호감도 +{favor_delta}, 대학원 루트 진행)",
+    "option2": "아직 학부생인데, 부담스럽습니다. (교수 호감도 {favor_delta})",
+    "success": "세미나는 어려웠지만, 이상하게 더 알고 싶어졌습니다.",
+    "reject": "교수는 연구에 대한 열정을 더 보여달라는 듯합니다."
+  },
+  "graduate3": {
+    "title": "대학원 권유",
+    "content": "대학원에 타라. {player_name}.",
+    "option1": "까짓거 함 해보죠. (스트레스 +{stress_delta}, 교수 호감도 +{favor_delta}, 주의! 어떤 짓을 하더라도 되돌리지 못합니다)",
+    "option2": "싫은데요. (교수 호감도 {favor_delta})",
+    "success": "모든 건 이제부터다.",
+    "reject": "탈 거면 빨리 타고, 안 탈 거면 돌아가라!"
+  }
+}
